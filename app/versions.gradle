@@ -1,0 +1,18 @@
+ext {
+    VERSIONS = [
+            JUNIT            : "4.12",
+            BUTTER_KNIFE     : "8.5.1",
+            SUPPORT_LIBRARY  : "25.3.1",
+            CONSTRAIN_LAYOUT : "1.0.2",
+            RXANDROID        : "2.0.1",
+            RXJAVA           : "2.0.1",
+            RETROFIT         : "2.2.0",
+            RETROFIT_GSON    : "2.0.0",
+            JACKSON          : "2.7.5",
+            STETHO           : "1.3.1",
+            MULTIDEX         : "1.0.1",
+            JW_RETROFIT      : "1.0.0",
+            LEAK_KANARY      : "1.5",
+            GSON             : "2.4"
+    ]
+}

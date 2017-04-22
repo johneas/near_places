@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="modelView"
+            type="com.gap.test.view.places.list.PlacesViewModel" />
+
+        <variable
+            name="presenter"
+            type="com.gap.test.view.places.list.PlacesPresenter" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_background_color">
+
+        <include layout="@layout/progressbar_layout"
+            bind:modelView="@{modelView}" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onShow="@{!modelView.isLoading}">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:listitem="@layout/item_place_list"/>
+
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

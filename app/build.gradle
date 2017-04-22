@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply from: 'versions.gradle'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.gap.test"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testCompile "junit:junit:${VERSIONS.JUNIT}"
+    compile "com.android.support:appcompat-v7:${VERSIONS.SUPPORT_LIBRARY}"
+    compile "com.android.support:design:${VERSIONS.SUPPORT_LIBRARY}"
+    compile "com.android.support.constraint:constraint-layout:${VERSIONS.CONSTRAIN_LAYOUT}"
+    compile "com.android.support:cardview-v7:${VERSIONS.SUPPORT_LIBRARY}"
+    compile "com.squareup.retrofit2:retrofit:${VERSIONS.RETROFIT}"
+    compile "com.squareup.retrofit2:converter-gson:${VERSIONS.RETROFIT_GSON}"
+    compile "io.reactivex.rxjava2:rxjava:${VERSIONS.RXJAVA}"
+    compile "io.reactivex.rxjava2:rxandroid:${VERSIONS.RXANDROID}"
+    compile "com.android.support:multidex:${VERSIONS.MULTIDEX}"
+    compile "com.google.code.gson:gson:${VERSIONS.GSON}"
+    compile "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${VERSIONS.JW_RETROFIT}"
+    compile "com.jakewharton:butterknife:${VERSIONS.BUTTER_KNIFE}"
+    compile "com.jakewharton:butterknife-compiler:${VERSIONS.BUTTER_KNIFE}"
+
+    compile "com.facebook.stetho:stetho:${VERSIONS.STETHO}"
+    compile "com.facebook.stetho:stetho-okhttp3:${VERSIONS.STETHO}"
+    debugCompile "com.squareup.leakcanary:leakcanary-android:${VERSIONS.LEAK_KANARY}"
+    testCompile "com.squareup.leakcanary:leakcanary-android-no-op:${VERSIONS.LEAK_KANARY}"
+    compile 'javax.annotation:javax.annotation-api:1.2'
+}

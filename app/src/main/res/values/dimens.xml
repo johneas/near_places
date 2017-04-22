@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="progressbar_size">100dp</dimen>
+
+    <dimen name="margin_big">15dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+
+    <dimen name="corner_radius">5dp</dimen>
+
+    <!-- Font sizes. -->
+    <dimen name="font_micro">12sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+</resources>
