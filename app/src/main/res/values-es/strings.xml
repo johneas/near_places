@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">Near-place</string>
+    <string name="place_name_hint">Ingrese el nombre de un lugar</string>
+    <string name="edit_text_error_message">Este campo no puede estar vacio!</string>
+    <string name="search_place">Buscar</string>
+    <string name="near_places">Lugares en</string>
+    <string name="search_places">Buscar lugares</string>
+    <string name="permission_mandatory">Se requiere permisos</string>
+    <string name="all_permission_required">Permisos requeridos para funcionar correctamente</string>
+    <string name="ok">Listo</string>
+    <string name="place_details">Detalles del lugar</string>
+    <string name="close_button">Cerrar</string>
+    <string name="place_name">Nombre del lugar</string>
+    <string name="phone_number">Número teléfonico</string>
+    <string name="location_address">Dirección</string>
+    <string name="city">Ciudad</string>
+    <string name="no_data">No fué pisible encontrar lugares para</string>
+    <string name="na">n/d</string>
+
+</resources>

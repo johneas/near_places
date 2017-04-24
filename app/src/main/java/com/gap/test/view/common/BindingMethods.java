@@ -34,7 +34,7 @@ public class BindingMethods {
     }
 
     /**
-     * Check if an mandatory field, have information before continue
+     * Check if a mandatory field, have information before continue
      * @param view Edit text
      * @param validate if require validation
      */
@@ -69,7 +69,7 @@ public class BindingMethods {
     }
 
     /**
-     * Convert a text with to htm format
+     * Convert a text to htm format
      *
      * @param textView Text container
      * @param html htm text
